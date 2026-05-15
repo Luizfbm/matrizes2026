@@ -1,0 +1,23 @@
+---
+import { festival } from "@/data/festival";
+---
+
+<section id="programacao" class="section" aria-labelledby="programacao-title">
+  <div class="section-inner">
+    <p class="eyebrow">Line-up e programação</p>
+    <h2 id="programacao-title" class="section-title">Forró de 11 a 18 de julho</h2>
+    <p>{festival.programNote}</p>
+    <figure class="festival-photo festival-photo--lineup">
+      <img
+        src="/images/matrizes-festival-mosaic.jpg"
+        alt="Sanfoneiro se apresentando no Festival Matrizes em Itaúnas"
+        loading="lazy"
+        decoding="async"
+      />
+    </figure>
+    <ul class="lineup-grid">
+      {festival.lineup.map((artist) => <li>{artist}</li>)}
+    </ul>
+    <a class="button" href={festival.links.tickets}>Garantir ingresso</a>
+  </div>
+</section>

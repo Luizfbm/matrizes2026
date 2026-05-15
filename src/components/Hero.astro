@@ -1,0 +1,34 @@
+---
+import { festival } from "@/data/festival";
+---
+
+<section class="hero">
+  <div class="poster-band" aria-hidden="true"></div>
+  <div class="hero__inner">
+    <div class="hero__content">
+      <p class="eyebrow">Buraco do Tatu apresenta</p>
+      <h1>Festival Matrizes 2026 em Itaúnas</h1>
+      <p class="hero__lead">
+        {festival.displayDate}, no {festival.venue.name}. Uma semana de forró pé de serra,
+        dança, DJs, encontros, praia e cultura em Itaúnas.
+      </p>
+      <div class="hero__actions">
+        <a class="button" href={festival.links.tickets}>Comprar ingresso</a>
+        <a class="button secondary" href="#programacao">Ver programação</a>
+      </div>
+    </div>
+    <figure class="festival-photo festival-photo--hero">
+      <img
+        src="/images/matrizes-festival-mosaic.jpg"
+        alt="Público e artistas no palco do Festival Matrizes no Buraco do Tatu em Itaúnas"
+        loading="eager"
+        decoding="async"
+      />
+    </figure>
+    <dl class="hero__facts">
+      <div><dt>Quando</dt><dd>{festival.displayDate}</dd></div>
+      <div><dt>Onde</dt><dd>{festival.venue.name}, Itaúnas - ES</dd></div>
+      <div><dt>Estilo</dt><dd>Forró, dança e cultura</dd></div>
+    </dl>
+  </div>
+</section>

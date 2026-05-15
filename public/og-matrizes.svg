@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Festival Matrizes 2026 em Itaúnas</title>
+  <desc id="desc">Imagem social temporária do Festival Matrizes 2026 no Buraco do Tatu.</desc>
+  <rect width="1200" height="630" fill="#f3e5c1"/>
+  <rect x="0" y="0" width="1200" height="96" fill="#111111"/>
+  <rect x="0" y="534" width="1200" height="96" fill="#b3281e"/>
+  <text x="80" y="220" font-family="Arial Black, Arial, sans-serif" font-size="84" fill="#0d5a43">MATRIZES 2026</text>
+  <text x="80" y="310" font-family="Arial, sans-serif" font-size="42" fill="#111111">11 a 18 de julho | Itaúnas - ES</text>
+  <text x="80" y="385" font-family="Arial Black, Arial, sans-serif" font-size="50" fill="#b3281e">BURACO DO TATU</text>
+  <text x="80" y="465" font-family="Arial, sans-serif" font-size="34" fill="#111111">Forró, dança, encontros e cultura</text>
+</svg>

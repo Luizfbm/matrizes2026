@@ -1,0 +1,26 @@
+---
+import { festival } from "@/data/festival";
+import { buildStructuredData } from "@/utils/structuredData";
+
+const canonical = new URL(festival.canonicalPath, Astro.site).toString();
+const structuredData = JSON.stringify(buildStructuredData());
+---
+
+<title>{festival.seoTitle}</title>
+<meta name="description" content={festival.seoDescription} />
+<link rel="canonical" href={canonical} />
+<meta property="og:type" content="website" />
+<meta property="og:title" content={festival.seoTitle} />
+<meta property="og:description" content={festival.seoDescription} />
+<meta property="og:url" content={canonical} />
+<meta property="og:image" content={new URL("/og-matrizes.svg", Astro.site).toString()} />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={festival.seoTitle} />
+<meta name="twitter:description" content={festival.seoDescription} />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap"
+  rel="stylesheet"
+/>
+<script type="application/ld+json" is:inline set:html={structuredData}></script>

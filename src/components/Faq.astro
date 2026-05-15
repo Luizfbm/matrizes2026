@@ -1,0 +1,16 @@
+---
+import { festival } from "@/data/festival";
+---
+
+<section class="section faq" aria-labelledby="faq-title">
+  <div class="section-inner">
+    <p class="eyebrow">Perguntas frequentes</p>
+    <h2 id="faq-title" class="section-title">Matrizes 2026 em Itaúnas</h2>
+    {festival.faq.map((item) => (
+      <details>
+        <summary>{item.question}</summary>
+        <p>{item.answer}</p>
+      </details>
+    ))}
+  </div>
+</section>
