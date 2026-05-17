@@ -1,15 +1,22 @@
+---
+import type { FestivalPage } from "@/data/festival";
+
+interface Props {
+  content: FestivalPage;
+}
+
+const { content } = Astro.props;
+---
+
 <section class="section section--green" aria-labelledby="tfd-title">
   <div class="section-inner">
     <p class="eyebrow">TFD</p>
-    <h2 id="tfd-title" class="section-title">Torneio de Forró Dança</h2>
-    <p>
-      O TFD integra o Festival Matrizes como espaço de valorização da dança, dos grupos
-      e da cultura forrozeira que encontra em Itaúnas uma de suas pistas mais importantes.
-    </p>
+    <h2 id="tfd-title" class="section-title">{content.sections.tfdTitle}</h2>
+    <p>{content.sections.tfdText}</p>
     <figure class="festival-photo festival-photo--dance">
       <img
         src="/images/matrizes-festival-mosaic.jpg"
-        alt="Casal dançando forró durante o Festival Matrizes no Buraco do Tatu"
+        alt={content.images.danceAlt}
         loading="lazy"
         decoding="async"
       />

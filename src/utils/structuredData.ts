@@ -1,8 +1,6 @@
-import { festival } from "@/data/festival";
+import type { FestivalPage } from "@/data/festival";
 
-const siteUrl = "https://festivalmatrizes.com.br";
-
-export function buildStructuredData() {
+export function buildStructuredData(festival: FestivalPage, canonicalUrl: string) {
   return [
     {
       "@context": "https://schema.org",
@@ -67,8 +65,8 @@ export function buildStructuredData() {
         {
           "@type": "ListItem",
           position: 1,
-          name: "Festival Matrizes 2026",
-          item: siteUrl
+          name: festival.name,
+          item: canonicalUrl
         }
       ]
     }

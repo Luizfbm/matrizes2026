@@ -1,12 +1,18 @@
 ---
-import { festival } from "@/data/festival";
+import type { FestivalPage } from "@/data/festival";
+
+interface Props {
+  content: FestivalPage;
+}
+
+const { content } = Astro.props;
 ---
 
 <section class="section final-cta" aria-labelledby="cta-title">
   <div class="section-inner">
-    <p class="eyebrow">11 a 18 de julho de 2026</p>
-    <h2 id="cta-title" class="section-title">Viva o Matrizes no Buraco do Tatu</h2>
-    <p>Garanta seu ingresso pelos canais oficiais e venha para Itaúnas.</p>
-    <a class="button" href={festival.links.tickets}>Comprar ingresso</a>
+    <p class="eyebrow">{content.displayDate}</p>
+    <h2 id="cta-title" class="section-title">{content.sections.finalTitle}</h2>
+    <p>{content.sections.finalText}</p>
+    <a class="button" href={content.links.tickets}>{content.sections.finalCta}</a>
   </div>
 </section>

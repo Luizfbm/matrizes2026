@@ -1,22 +1,32 @@
 ---
-import { festival } from "@/data/festival";
 import { buildStructuredData } from "@/utils/structuredData";
+import type { FestivalPage } from "@/data/festival";
 
-const canonical = new URL(festival.canonicalPath, Astro.site).toString();
-const structuredData = JSON.stringify(buildStructuredData());
+interface Props {
+  content: FestivalPage;
+}
+
+const { content } = Astro.props;
+const canonical = new URL(content.canonicalPath, Astro.site).toString();
+const ptUrl = new URL("/", Astro.site).toString();
+const enUrl = new URL("/en/", Astro.site).toString();
+const structuredData = JSON.stringify(buildStructuredData(content, canonical));
 ---
 
-<title>{festival.seoTitle}</title>
-<meta name="description" content={festival.seoDescription} />
+<title>{content.seoTitle}</title>
+<meta name="description" content={content.seoDescription} />
 <link rel="canonical" href={canonical} />
+<link rel="alternate" hreflang="pt-BR" href={ptUrl} />
+<link rel="alternate" hreflang="en" href={enUrl} />
+<link rel="alternate" hreflang="x-default" href={ptUrl} />
 <meta property="og:type" content="website" />
-<meta property="og:title" content={festival.seoTitle} />
-<meta property="og:description" content={festival.seoDescription} />
+<meta property="og:title" content={content.seoTitle} />
+<meta property="og:description" content={content.seoDescription} />
 <meta property="og:url" content={canonical} />
 <meta property="og:image" content={new URL("/og-matrizes.svg", Astro.site).toString()} />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content={festival.seoTitle} />
-<meta name="twitter:description" content={festival.seoDescription} />
+<meta name="twitter:title" content={content.seoTitle} />
+<meta name="twitter:description" content={content.seoDescription} />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link

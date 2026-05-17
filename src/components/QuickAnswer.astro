@@ -1,12 +1,18 @@
 ---
-import { festival } from "@/data/festival";
+import type { FestivalPage } from "@/data/festival";
+
+interface Props {
+  content: FestivalPage;
+}
+
+const { content } = Astro.props;
 ---
 
 <section class="section answer-block" aria-labelledby="resumo">
   <div class="section-inner">
-    <p class="eyebrow">Resposta rápida</p>
-    <h2 id="resumo" class="section-title">O que é o Matrizes 2026?</h2>
-    <p class="answer-block__text">{festival.quickAnswer}</p>
-    <p>{festival.searchAnswer}</p>
+    <p class="eyebrow">{content.sections.quickEyebrow}</p>
+    <h2 id="resumo" class="section-title">{content.sections.quickTitle}</h2>
+    <p class="answer-block__text">{content.quickAnswer}</p>
+    <p>{content.searchAnswer}</p>
   </div>
 </section>
