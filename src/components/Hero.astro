@@ -23,7 +23,7 @@ const { content } = Astro.props;
     </div>
     <figure class="festival-photo festival-photo--hero">
       <img
-        src="/images/matrizes-festival-mosaic.jpg"
+        src={content.images.heroSrc}
         alt={content.images.heroAlt}
         loading="eager"
         decoding="async"

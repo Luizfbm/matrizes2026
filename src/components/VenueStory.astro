@@ -15,7 +15,7 @@ const { content } = Astro.props;
     <p>{content.sections.venueText}</p>
     <figure class="festival-photo festival-photo--venue">
       <img
-        src="/images/matrizes-festival-mosaic.jpg"
+        src={content.images.venueSrc}
         alt={content.images.venueAlt}
         loading="lazy"
         decoding="async"

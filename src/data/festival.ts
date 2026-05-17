@@ -115,10 +115,15 @@ export const festivalPages = {
       finalCta: "Garantir ingresso"
     },
     images: {
-      heroAlt: "Público e artistas no palco do Festival Matrizes no Buraco do Tatu em Itaúnas",
-      lineupAlt: "Sanfoneiro se apresentando no Festival Matrizes em Itaúnas",
-      danceAlt: "Casal dançando forró durante o Festival Matrizes no Buraco do Tatu",
-      venueAlt: "Casa cheia no Buraco do Tatu durante noite de forró em Itaúnas"
+      heroSrc: "/images/matrizes-drive/festival-matrizes-2026-buraco-do-tatu-itaunas-casa-cheia.jpg",
+      lineupSrc: "/images/matrizes-drive/programacao-festival-matrizes-2026-palco-forro-itaunas.jpg",
+      danceSrc: "/images/matrizes-drive/danca-forro-festival-matrizes-2026-itaunas.jpg",
+      venueSrc: "/images/matrizes-drive/forro-em-itaunas-festival-matrizes-2026-sanfona.jpg",
+      detailSrc: "/images/matrizes-drive/detalhe-copo-festival-matrizes-2026-buraco-do-tatu.jpg",
+      heroAlt: "Casa cheia no Festival Matrizes 2026 no Buraco do Tatu em Itaúnas",
+      lineupAlt: "Palco do Festival Matrizes 2026 com show de forró em Itaúnas",
+      danceAlt: "Casal dançando forró durante o Festival Matrizes 2026 em Itaúnas",
+      venueAlt: "Sanfoneiro se apresentando no Festival Matrizes no Buraco do Tatu"
     },
     faq: [
       {
@@ -228,10 +233,15 @@ export const festivalPages = {
       finalCta: "Get tickets"
     },
     images: {
-      heroAlt: "Audience and artists on stage at Festival Matrizes at Buraco do Tatu in Itaúnas",
-      lineupAlt: "Accordion player performing at Festival Matrizes in Itaúnas",
-      danceAlt: "Couple dancing forró during Festival Matrizes at Buraco do Tatu",
-      venueAlt: "Full house at Buraco do Tatu during a forró night in Itaúnas"
+      heroSrc: "/images/matrizes-drive/festival-matrizes-2026-buraco-do-tatu-itaunas-casa-cheia.jpg",
+      lineupSrc: "/images/matrizes-drive/programacao-festival-matrizes-2026-palco-forro-itaunas.jpg",
+      danceSrc: "/images/matrizes-drive/danca-forro-festival-matrizes-2026-itaunas.jpg",
+      venueSrc: "/images/matrizes-drive/forro-em-itaunas-festival-matrizes-2026-sanfona.jpg",
+      detailSrc: "/images/matrizes-drive/detalhe-copo-festival-matrizes-2026-buraco-do-tatu.jpg",
+      heroAlt: "Full house at Festival Matrizes 2026 at Buraco do Tatu in Itaúnas",
+      lineupAlt: "Festival Matrizes 2026 stage with a forró concert in Itaúnas",
+      danceAlt: "Couple dancing forró during Festival Matrizes 2026 in Itaúnas",
+      venueAlt: "Accordion player performing at Festival Matrizes at Buraco do Tatu"
     },
     faq: [
       {

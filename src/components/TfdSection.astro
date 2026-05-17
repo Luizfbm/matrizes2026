@@ -15,7 +15,7 @@ const { content } = Astro.props;
     <p>{content.sections.tfdText}</p>
     <figure class="festival-photo festival-photo--dance">
       <img
-        src="/images/matrizes-festival-mosaic.jpg"
+        src={content.images.danceSrc}
         alt={content.images.danceAlt}
         loading="lazy"
         decoding="async"

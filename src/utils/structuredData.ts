@@ -7,6 +7,7 @@ export function buildStructuredData(festival: FestivalPage, canonicalUrl: string
       "@type": "MusicEvent",
       name: festival.name,
       description: festival.seoDescription,
+      image: [new URL(festival.images.heroSrc, canonicalUrl).toString()],
       startDate: festival.startDate,
       endDate: festival.endDate,
       eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",

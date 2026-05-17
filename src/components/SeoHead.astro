@@ -26,7 +26,7 @@ const structuredData = JSON.stringify(buildStructuredData(content, canonical));
 <meta property="og:title" content={content.seoTitle} />
 <meta property="og:description" content={content.seoDescription} />
 <meta property="og:url" content={canonical} />
-<meta property="og:image" content={new URL("/og-matrizes.svg", Astro.site).toString()} />
+<meta property="og:image" content={new URL(content.images.heroSrc, Astro.site).toString()} />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content={content.seoTitle} />
 <meta name="twitter:description" content={content.seoDescription} />

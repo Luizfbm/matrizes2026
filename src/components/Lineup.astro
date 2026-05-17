@@ -15,7 +15,7 @@ const { content } = Astro.props;
     <p>{content.sections.programNote}</p>
     <figure class="festival-photo festival-photo--lineup">
       <img
-        src="/images/matrizes-festival-mosaic.jpg"
+        src={content.images.lineupSrc}
         alt={content.images.lineupAlt}
         loading="lazy"
         decoding="async"
