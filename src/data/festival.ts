@@ -93,8 +93,9 @@ export const festivalPages = {
           icon: "ticket"
         },
         {
-          title: "Instagram",
+          title: "@buracodotatuitaunas",
           text: "Acompanhe novidades, chamadas e conteúdos oficiais do Buraco do Tatu.",
+          icon: "instagram",
           href: shared.links.instagram
         },
         { title: "Local", text: "Buraco do Tatu, Itaúnas, Conceição da Barra - ES.", icon: "location" }
@@ -201,8 +202,9 @@ export const festivalPages = {
           icon: "ticket"
         },
         {
-          title: "Instagram",
+          title: "@buracodotatuitaunas",
           text: "Follow news, announcements and official Buraco do Tatu content.",
+          icon: "instagram",
           href: shared.links.instagram
         },
         {
