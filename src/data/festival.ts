@@ -84,7 +84,11 @@ export const festivalPages = {
       infoCards: [
         { title: "Programação", text: "Veja os artistas confirmados e acompanhe as atualizações oficiais do festival." },
         { title: "Ingressos", text: "Garanta seu ingresso pelos canais oficiais do Festival Matrizes." },
-        { title: "Instagram", text: "Acompanhe novidades, chamadas e conteúdos oficiais do Buraco do Tatu." },
+        {
+          title: "Instagram",
+          text: "Acompanhe novidades, chamadas e conteúdos oficiais do Buraco do Tatu.",
+          href: shared.links.instagram
+        },
         { title: "Local", text: "Buraco do Tatu, Itaúnas, Conceição da Barra - ES." }
       ],
       venueEyebrow: "A casa",
@@ -180,7 +184,11 @@ export const festivalPages = {
       infoCards: [
         { title: "Lineup", text: "See confirmed artists and follow official festival updates." },
         { title: "Tickets", text: "Get your ticket through the official Festival Matrizes channels." },
-        { title: "Instagram", text: "Follow news, announcements and official Buraco do Tatu content." },
+        {
+          title: "Instagram",
+          text: "Follow news, announcements and official Buraco do Tatu content.",
+          href: shared.links.instagram
+        },
         { title: "Location", text: "Buraco do Tatu, Itaúnas, Conceição da Barra - Espírito Santo, Brazil." }
       ],
       venueEyebrow: "The venue",

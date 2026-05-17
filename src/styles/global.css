@@ -85,6 +85,14 @@ a {
   background: var(--color-paper);
 }
 
+.text-link {
+  display: inline-block;
+  margin-top: 8px;
+  font-weight: 900;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
 .poster-band {
   height: 18px;
   background:
