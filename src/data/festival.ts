@@ -82,14 +82,22 @@ export const festivalPages = {
       planEyebrow: "Planeje sua ida",
       planTitle: "Programação, ingressos e informações oficiais",
       infoCards: [
-        { title: "Programação", text: "Veja os artistas confirmados e acompanhe as atualizações oficiais do festival." },
-        { title: "Ingressos", text: "Garanta seu ingresso pelos canais oficiais do Festival Matrizes." },
+        {
+          title: "Programação",
+          text: "Veja os artistas confirmados e acompanhe as atualizações oficiais do festival.",
+          icon: "party"
+        },
+        {
+          title: "Ingressos",
+          text: "Garanta seu ingresso pelos canais oficiais do Festival Matrizes.",
+          icon: "ticket"
+        },
         {
           title: "Instagram",
           text: "Acompanhe novidades, chamadas e conteúdos oficiais do Buraco do Tatu.",
           href: shared.links.instagram
         },
-        { title: "Local", text: "Buraco do Tatu, Itaúnas, Conceição da Barra - ES." }
+        { title: "Local", text: "Buraco do Tatu, Itaúnas, Conceição da Barra - ES.", icon: "location" }
       ],
       venueEyebrow: "A casa",
       venueTitle: "Buraco do Tatu em Itaúnas",
@@ -182,14 +190,26 @@ export const festivalPages = {
       planEyebrow: "Plan your trip",
       planTitle: "Lineup, tickets and official information",
       infoCards: [
-        { title: "Lineup", text: "See confirmed artists and follow official festival updates." },
-        { title: "Tickets", text: "Get your ticket through the official Festival Matrizes channels." },
+        {
+          title: "Lineup",
+          text: "See confirmed artists and follow official festival updates.",
+          icon: "party"
+        },
+        {
+          title: "Tickets",
+          text: "Get your ticket through the official Festival Matrizes channels.",
+          icon: "ticket"
+        },
         {
           title: "Instagram",
           text: "Follow news, announcements and official Buraco do Tatu content.",
           href: shared.links.instagram
         },
-        { title: "Location", text: "Buraco do Tatu, Itaúnas, Conceição da Barra - Espírito Santo, Brazil." }
+        {
+          title: "Location",
+          text: "Buraco do Tatu, Itaúnas, Conceição da Barra - Espírito Santo, Brazil.",
+          icon: "location"
+        }
       ],
       venueEyebrow: "The venue",
       venueTitle: "Buraco do Tatu in Itaúnas",

@@ -99,6 +99,13 @@ a {
   gap: 8px;
 }
 
+.card-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card-icon,
 .brand-icon {
   width: 22px;
   height: 22px;
