@@ -1,6 +1,6 @@
 import { defineConfig } from "astro/config";
 
 export default defineConfig({
-  site: "https://matrizes.buracodotatuitaunas.com.br",
+  site: "https://festivalmatrizes.com.br",
   output: "static"
 });

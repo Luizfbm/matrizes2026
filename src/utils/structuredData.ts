@@ -1,6 +1,6 @@
 import { festival } from "@/data/festival";
 
-const siteUrl = "https://matrizes.buracodotatuitaunas.com.br";
+const siteUrl = "https://festivalmatrizes.com.br";
 
 export function buildStructuredData() {
   return [

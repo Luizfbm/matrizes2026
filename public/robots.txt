@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://matrizes.buracodotatuitaunas.com.br/sitemap.xml
+Sitemap: https://festivalmatrizes.com.br/sitemap.xml
