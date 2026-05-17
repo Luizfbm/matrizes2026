@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Buraco do Tatu">
+  <rect width="64" height="64" rx="12" fill="#d72c17"/>
+  <path fill="#11100c" d="M8 10h6l-3 4-3-4Zm7 0h6l-3 4-3-4Zm7 0h6l-3 4-3-4Zm7 0h6l-3 4-3-4Zm7 0h6l-3 4-3-4Zm7 0h6l-3 4-3-4Zm7 0h6l-3 4-3-4Z"/>
+  <text
+    x="32"
+    y="41"
+    text-anchor="middle"
+    fill="#efb300"
+    stroke="#efb300"
+    stroke-width="1"
+    font-family="Impact, Arial Black, sans-serif"
+    font-size="29"
+    font-weight="900"
+    letter-spacing="-1"
+  >BT</text>
+  <path d="M9 49c5-3 10 3 15 0s10 3 15 0 10 3 16 0" fill="none" stroke="#11100c" stroke-width="3" stroke-linecap="round"/>
+  <path d="M9 55c5-3 10 3 15 0s10 3 15 0 10 3 16 0" fill="none" stroke="#11100c" stroke-width="3" stroke-linecap="round"/>
+</svg>

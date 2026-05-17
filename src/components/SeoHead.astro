@@ -15,6 +15,9 @@ const structuredData = JSON.stringify(buildStructuredData(content, canonical));
 
 <title>{content.seoTitle}</title>
 <meta name="description" content={content.seoDescription} />
+<meta name="theme-color" content="#d72c17" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.svg" />
 <link rel="canonical" href={canonical} />
 <link rel="alternate" hreflang="pt-BR" href={ptUrl} />
 <link rel="alternate" hreflang="en" href={enUrl} />
