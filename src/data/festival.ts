@@ -31,6 +31,8 @@ const shared = {
       "https://open.spotify.com/user/313insbwhhsnni6e7yw4asa3b37m?si=7e113b905c024643&nd=1&dlsi=dbc5fe3871e542df",
     youtube: "https://www.youtube.com/@buracodotatuitaunas",
     tiktok: "https://www.tiktok.com/@buracodotatuitaunas",
+    maps:
+      "https://www.google.com/maps/search/?api=1&query=Buraco%20do%20Tatu%20Ita%C3%BAnas%20Concei%C3%A7%C3%A3o%20da%20Barra%20ES",
     linktree: "https://linktr.ee/buracodotatuitaunas"
   }
 } as const;
@@ -127,7 +129,12 @@ export const festivalPages = {
           icon: "tiktok",
           href: shared.links.tiktok
         },
-        { title: "Local", text: "Buraco do Tatu, Itaúnas, Conceição da Barra - ES.", icon: "location" }
+        {
+          title: "Local",
+          text: "Buraco do Tatu, Itaúnas, Conceição da Barra - ES.",
+          icon: "location",
+          href: shared.links.maps
+        }
       ],
       venueEyebrow: "A casa",
       venueTitle: "Buraco do Tatu em Itaúnas",
@@ -268,7 +275,8 @@ export const festivalPages = {
         {
           title: "Location",
           text: "Buraco do Tatu, Itaúnas, Conceição da Barra - Espírito Santo, Brazil.",
-          icon: "location"
+          icon: "location",
+          href: shared.links.maps
         }
       ],
       venueEyebrow: "The venue",
