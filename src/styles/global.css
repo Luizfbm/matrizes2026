@@ -118,6 +118,29 @@ a {
   stroke-width: 2;
 }
 
+.card-icon--brand {
+  fill: currentColor;
+  stroke: none;
+}
+
+.card-icon--brand circle,
+.card-icon--brand .card-icon-cutout {
+  fill: var(--color-paper);
+}
+
+.card-icon--brand path:not(.card-icon-cutout) {
+  fill: currentColor;
+}
+
+.card-icon--brand circle + path,
+.card-icon--brand circle + path + path,
+.card-icon--brand circle + path + path + path {
+  fill: none;
+  stroke: var(--color-ink);
+  stroke-linecap: round;
+  stroke-width: 1.45;
+}
+
 .poster-band {
   height: 18px;
   background:

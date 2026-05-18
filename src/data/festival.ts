@@ -26,6 +26,11 @@ const shared = {
   links: {
     tickets: "https://www.sympla.com.br/evento/festival-matrizes-2026/3174950",
     instagram: "https://www.instagram.com/buracodotatuitaunas/",
+    facebook: "https://www.facebook.com/tatuitaunas",
+    spotify:
+      "https://open.spotify.com/user/313insbwhhsnni6e7yw4asa3b37m?si=7e113b905c024643&nd=1&dlsi=dbc5fe3871e542df",
+    youtube: "https://www.youtube.com/@buracodotatuitaunas",
+    tiktok: "https://www.tiktok.com/@buracodotatuitaunas",
     linktree: "https://linktr.ee/buracodotatuitaunas"
   }
 } as const;
@@ -97,6 +102,30 @@ export const festivalPages = {
           text: "Acompanhe novidades, chamadas e conteúdos oficiais do Buraco do Tatu.",
           icon: "instagram",
           href: shared.links.instagram
+        },
+        {
+          title: "Facebook",
+          text: "Acompanhe eventos e novidades oficiais no Facebook.",
+          icon: "facebook",
+          href: shared.links.facebook
+        },
+        {
+          title: "Spotify",
+          text: "Ouça seleções e conteúdos musicais ligados ao Buraco do Tatu.",
+          icon: "spotify",
+          href: shared.links.spotify
+        },
+        {
+          title: "YouTube",
+          text: "Veja vídeos e registros oficiais do Buraco do Tatu.",
+          icon: "youtube",
+          href: shared.links.youtube
+        },
+        {
+          title: "TikTok",
+          text: "Acompanhe cortes, chamadas e bastidores em vídeo curto.",
+          icon: "tiktok",
+          href: shared.links.tiktok
         },
         { title: "Local", text: "Buraco do Tatu, Itaúnas, Conceição da Barra - ES.", icon: "location" }
       ],
@@ -211,6 +240,30 @@ export const festivalPages = {
           text: "Follow news, announcements and official Buraco do Tatu content.",
           icon: "instagram",
           href: shared.links.instagram
+        },
+        {
+          title: "Facebook",
+          text: "Follow official events and updates on Facebook.",
+          icon: "facebook",
+          href: shared.links.facebook
+        },
+        {
+          title: "Spotify",
+          text: "Listen to music selections connected to Buraco do Tatu.",
+          icon: "spotify",
+          href: shared.links.spotify
+        },
+        {
+          title: "YouTube",
+          text: "Watch official videos and festival moments from Buraco do Tatu.",
+          icon: "youtube",
+          href: shared.links.youtube
+        },
+        {
+          title: "TikTok",
+          text: "Follow short videos, announcements and backstage moments.",
+          icon: "tiktok",
+          href: shared.links.tiktok
         },
         {
           title: "Location",

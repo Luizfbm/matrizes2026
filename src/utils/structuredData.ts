@@ -45,7 +45,14 @@ export function buildStructuredData(festival: FestivalPage, canonicalUrl: string
         addressCountry: "BR"
       },
       url: festival.venue.url,
-      sameAs: [festival.links.instagram, festival.links.linktree]
+      sameAs: [
+        festival.links.instagram,
+        festival.links.facebook,
+        festival.links.spotify,
+        festival.links.youtube,
+        festival.links.tiktok,
+        festival.links.linktree
+      ]
     },
     {
       "@context": "https://schema.org",
