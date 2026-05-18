@@ -266,12 +266,11 @@ a {
 }
 
 .festival-photo--dance {
-  aspect-ratio: 4 / 5;
-  max-width: 520px;
+  aspect-ratio: 16 / 10;
 }
 
 .festival-photo--dance img {
-  object-position: 18% 14%;
+  object-position: 50% 42%;
 }
 
 .festival-photo--venue {
@@ -340,6 +339,18 @@ a {
   color: var(--color-yellow);
 }
 
+.tfd-layout {
+  display: grid;
+  gap: 24px;
+}
+
+.tfd-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 24px;
+}
+
 .section--red .eyebrow,
 .final-cta .eyebrow {
   color: var(--color-paper);
@@ -381,5 +392,14 @@ a {
 
   .lineup-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .tfd-layout {
+    grid-template-columns: minmax(0, 0.9fr) minmax(420px, 1.1fr);
+    align-items: center;
+  }
+
+  .tfd-actions {
+    align-items: flex-start;
   }
 }

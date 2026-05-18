@@ -33,6 +33,9 @@ const shared = {
     tiktok: "https://www.tiktok.com/@buracodotatuitaunas",
     maps:
       "https://www.google.com/maps/search/?api=1&query=Buraco%20do%20Tatu%20Ita%C3%BAnas%20Concei%C3%A7%C3%A3o%20da%20Barra%20ES",
+    tfdRules: "https://drive.google.com/file/d/1PV4dAl6pNG3RllKo8Yl6BBGdSOoSDOi2/view",
+    tfdAnnouncementEn: "https://drive.google.com/file/d/1xGBrjWa9JknOcBhTtW2WNs_X5G9SUB9k/view",
+    tfdRegistration: "https://docs.google.com/forms/d/e/1FAIpQLSdB9kKPBZ_qslFrkmPUBo6oWyEjmKeUHjZthb2oGTKitqbm0A/viewform",
     linktree: "https://linktr.ee/buracodotatuitaunas"
   }
 } as const;
@@ -86,6 +89,12 @@ export const festivalPages = {
       tfdTitle: "Torneio de Forró Dança",
       tfdText:
         "O TFD integra o Festival Matrizes como espaço de valorização da dança, dos grupos e da cultura forrozeira que encontra em Itaúnas uma de suas pistas mais importantes.",
+      tfdLinksLabel: "Links oficiais do TFD",
+      tfdLinks: [
+        { label: "Inscrições para o TFD", href: shared.links.tfdRegistration },
+        { label: "Regulamento do torneio", href: shared.links.tfdRules },
+        { label: "Anúncio oficial em inglês", href: shared.links.tfdAnnouncementEn }
+      ],
       planEyebrow: "Planeje sua ida",
       planTitle: "Programação, ingressos e informações oficiais",
       infoCards: [
@@ -153,12 +162,12 @@ export const festivalPages = {
     images: {
       heroSrc: "/images/matrizes-drive/festival-matrizes-2026-buraco-do-tatu-itaunas-casa-cheia.jpg",
       lineupSrc: "/images/matrizes-drive/programacao-festival-matrizes-2026-palco-forro-itaunas.jpg",
-      danceSrc: "/images/matrizes-drive/danca-forro-festival-matrizes-2026-itaunas.jpg",
+      danceSrc: "/images/matrizes-drive/festival-matrizes-2026-buraco-do-tatu-itaunas-casa-cheia.jpg",
       venueSrc: "/images/matrizes-drive/forro-em-itaunas-festival-matrizes-2026-sanfona.jpg",
       detailSrc: "/images/matrizes-drive/detalhe-copo-festival-matrizes-2026-buraco-do-tatu.jpg",
       heroAlt: "Casa cheia no Festival Matrizes 2026 no Buraco do Tatu em Itaúnas",
       lineupAlt: "Palco do Festival Matrizes 2026 com show de forró em Itaúnas",
-      danceAlt: "Casal dançando forró durante o Festival Matrizes 2026 em Itaúnas",
+      danceAlt: "Casa cheia durante o Festival Matrizes 2026 no Buraco do Tatu em Itaúnas",
       venueAlt: "Sanfoneiro se apresentando no Festival Matrizes no Buraco do Tatu"
     },
     faq: [
@@ -229,6 +238,12 @@ export const festivalPages = {
       tfdTitle: "Forró Dance Tournament",
       tfdText:
         "TFD is part of Festival Matrizes as a space for celebrating dance, groups and the forró culture that makes Itaúnas one of Brazil's key dance destinations.",
+      tfdLinksLabel: "Official TFD links",
+      tfdLinks: [
+        { label: "TFD registration", href: shared.links.tfdRegistration },
+        { label: "Tournament rules in Portuguese", href: shared.links.tfdRules },
+        { label: "Official TFD 2026 announcement", href: shared.links.tfdAnnouncementEn }
+      ],
       planEyebrow: "Plan your trip",
       planTitle: "Lineup, tickets and official information",
       infoCards: [
@@ -296,12 +311,12 @@ export const festivalPages = {
     images: {
       heroSrc: "/images/matrizes-drive/festival-matrizes-2026-buraco-do-tatu-itaunas-casa-cheia.jpg",
       lineupSrc: "/images/matrizes-drive/programacao-festival-matrizes-2026-palco-forro-itaunas.jpg",
-      danceSrc: "/images/matrizes-drive/danca-forro-festival-matrizes-2026-itaunas.jpg",
+      danceSrc: "/images/matrizes-drive/festival-matrizes-2026-buraco-do-tatu-itaunas-casa-cheia.jpg",
       venueSrc: "/images/matrizes-drive/forro-em-itaunas-festival-matrizes-2026-sanfona.jpg",
       detailSrc: "/images/matrizes-drive/detalhe-copo-festival-matrizes-2026-buraco-do-tatu.jpg",
       heroAlt: "Full house at Festival Matrizes 2026 at Buraco do Tatu in Itaúnas",
       lineupAlt: "Festival Matrizes 2026 stage with a forró concert in Itaúnas",
-      danceAlt: "Couple dancing forró during Festival Matrizes 2026 in Itaúnas",
+      danceAlt: "Full house during Festival Matrizes 2026 at Buraco do Tatu in Itaúnas",
       venueAlt: "Accordion player performing at Festival Matrizes at Buraco do Tatu"
     },
     faq: [

@@ -10,16 +10,29 @@ const { content } = Astro.props;
 
 <section class="section section--green" aria-labelledby="tfd-title">
   <div class="section-inner">
-    <p class="eyebrow">TFD</p>
-    <h2 id="tfd-title" class="section-title">{content.sections.tfdTitle}</h2>
-    <p>{content.sections.tfdText}</p>
-    <figure class="festival-photo festival-photo--dance">
+    <div class="tfd-layout">
+      <div class="tfd-content">
+        <p class="eyebrow">TFD</p>
+        <h2 id="tfd-title" class="section-title">{content.sections.tfdTitle}</h2>
+        <p>{content.sections.tfdText}</p>
+        <div class="tfd-actions" aria-label={content.sections.tfdLinksLabel}>
+          {
+            content.sections.tfdLinks.map((link, index) => (
+              <a class={index === 0 ? "button" : "button secondary"} href={link.href} target="_blank" rel="noopener noreferrer">
+                {link.label}
+              </a>
+            ))
+          }
+        </div>
+      </div>
+      <figure class="festival-photo festival-photo--dance">
       <img
         src={content.images.danceSrc}
         alt={content.images.danceAlt}
         loading="lazy"
         decoding="async"
       />
-    </figure>
+      </figure>
+    </div>
   </div>
 </section>
