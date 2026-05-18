@@ -6,14 +6,6 @@ interface Props {
 }
 
 const { content } = Astro.props;
-
-function getLinkLabel(title: string) {
-  if (title === "Local" || title === "Location") {
-    return "Abrir localização do Buraco do Tatu no Google Maps";
-  }
-
-  return title.startsWith("@") ? "Instagram oficial do Buraco do Tatu" : `${title} oficial do Buraco do Tatu`;
-}
 ---
 
 <section class="section" aria-labelledby="trip-title">
@@ -25,80 +17,72 @@ function getLinkLabel(title: string) {
         content.sections.infoCards.map((card) => (
           <article>
             <h3 class="card-title">
-              {
-                "href" in card ? (
-                  <a
-                    class="card-title-link"
-                    href={card.href}
-                    aria-label={getLinkLabel(card.title)}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {"icon" in card && card.icon === "instagram" && (
-                      <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                        <rect x="2.5" y="2.5" width="19" height="19" rx="5.25"></rect>
-                        <circle cx="12" cy="12" r="4.25"></circle>
-                        <circle cx="17.4" cy="6.6" r="1.15"></circle>
-                      </svg>
-                    )}
-                    {"icon" in card && card.icon === "facebook" && (
-                      <svg class="card-icon card-icon--brand" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                        <path d="M14 8.5h2.2V5h-2.8C10.7 5 9 6.8 9 9.6V12H6.8v3.5H9V22h3.8v-6.5h2.8l.6-3.5h-3.4V9.9c0-.9.4-1.4 1.2-1.4Z"></path>
-                      </svg>
-                    )}
-                    {"icon" in card && card.icon === "spotify" && (
-                      <svg class="card-icon card-icon--brand" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                        <circle cx="12" cy="12" r="9.5"></circle>
-                        <path d="M7.5 9.2c3.2-.9 6.6-.6 9.1 1"></path>
-                        <path d="M8.2 12.1c2.5-.7 5.1-.5 7.1.8"></path>
-                        <path d="M8.7 14.8c1.8-.5 3.7-.2 5.3.7"></path>
-                      </svg>
-                    )}
-                    {"icon" in card && card.icon === "youtube" && (
-                      <svg class="card-icon card-icon--brand" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                        <path d="M21 7.6a3.1 3.1 0 0 0-2.2-2.2C16.9 5 12 5 12 5s-4.9 0-6.8.4A3.1 3.1 0 0 0 3 7.6 32.4 32.4 0 0 0 2.6 12c0 1.5.1 3 .4 4.4a3.1 3.1 0 0 0 2.2 2.2c1.9.4 6.8.4 6.8.4s4.9 0 6.8-.4a3.1 3.1 0 0 0 2.2-2.2c.3-1.4.4-2.9.4-4.4 0-1.5-.1-3-.4-4.4Z"></path>
-                        <path class="card-icon-cutout" d="m10 15.1 5.1-3.1L10 8.9v6.2Z"></path>
-                      </svg>
-                    )}
-                    {"icon" in card && card.icon === "tiktok" && (
-                      <svg class="card-icon card-icon--brand" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                        <path d="M15.2 4c.5 2.4 1.8 3.8 4.1 4.1v3.4a7.2 7.2 0 0 1-4-1.2v5.4c0 3.3-2.3 5.5-5.5 5.5A5.1 5.1 0 0 1 4.7 16c0-3.1 2.5-5.4 5.6-5.2v3.6c-1.1-.2-2 .5-2 1.6 0 1 .7 1.7 1.7 1.7s1.7-.7 1.7-1.8V4h3.5Z"></path>
-                      </svg>
-                    )}
-                    {"icon" in card && card.icon === "location" && (
-                      <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                        <path d="M12 21s7-5.7 7-12a7 7 0 1 0-14 0c0 6.3 7 12 7 12Z"></path>
-                        <circle cx="12" cy="9" r="2.5"></circle>
-                      </svg>
-                    )}
-                    <span>{card.title}</span>
-                  </a>
-                ) : (
-                  <>
-                    {"icon" in card && card.icon === "party" && (
-                      <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                        <path d="m5 21 4.2-14.2L17.2 15 5 21Z"></path>
-                        <path d="m9.2 6.8 8 8"></path>
-                        <path d="M14 4c1.6 0 2.8.8 3.3 2.2"></path>
-                        <path d="M17.5 10.2c1.8-.1 3.1.6 4 2"></path>
-                        <path d="M11.8 2.5c.6 1.1.5 2.2-.3 3.2"></path>
-                        <path d="M19.8 4.2 21 3"></path>
-                        <path d="m18.5 7.5 1.7.4"></path>
-                        <path d="m13.5 9.2 1.7-.6"></path>
-                      </svg>
-                    )}
-                    {"icon" in card && card.icon === "ticket" && (
-                      <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                        <path d="M3.5 8.5a2 2 0 0 1 2-2h13a2 2 0 0 1 2 2v2.1a2.4 2.4 0 0 0 0 4.8v2.1a2 2 0 0 1-2 2h-13a2 2 0 0 1-2-2v-2.1a2.4 2.4 0 0 0 0-4.8V8.5Z"></path>
-                        <path d="M9 7v10"></path>
-                        <path d="M13 10h4"></path>
-                        <path d="M13 14h4"></path>
-                      </svg>
-                    )}
-                    <span>{card.title}</span>
-                  </>
-                )
-              }
+              <a
+                class="card-title-link"
+                href={card.href}
+                aria-label={card.linkLabel}
+                target={card.href.startsWith("http") ? "_blank" : undefined}
+                rel={card.href.startsWith("http") ? "noopener noreferrer" : undefined}
+              >
+                {card.icon === "party" && (
+                  <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="m5 21 4.2-14.2L17.2 15 5 21Z"></path>
+                    <path d="m9.2 6.8 8 8"></path>
+                    <path d="M14 4c1.6 0 2.8.8 3.3 2.2"></path>
+                    <path d="M17.5 10.2c1.8-.1 3.1.6 4 2"></path>
+                    <path d="M11.8 2.5c.6 1.1.5 2.2-.3 3.2"></path>
+                    <path d="M19.8 4.2 21 3"></path>
+                    <path d="m18.5 7.5 1.7.4"></path>
+                    <path d="m13.5 9.2 1.7-.6"></path>
+                  </svg>
+                )}
+                {card.icon === "ticket" && (
+                  <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M3.5 8.5a2 2 0 0 1 2-2h13a2 2 0 0 1 2 2v2.1a2.4 2.4 0 0 0 0 4.8v2.1a2 2 0 0 1-2 2h-13a2 2 0 0 1-2-2v-2.1a2.4 2.4 0 0 0 0-4.8V8.5Z"></path>
+                    <path d="M9 7v10"></path>
+                    <path d="M13 10h4"></path>
+                    <path d="M13 14h4"></path>
+                  </svg>
+                )}
+                {card.icon === "instagram" && (
+                  <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <rect x="2.5" y="2.5" width="19" height="19" rx="5.25"></rect>
+                    <circle cx="12" cy="12" r="4.25"></circle>
+                    <circle cx="17.4" cy="6.6" r="1.15"></circle>
+                  </svg>
+                )}
+                {card.icon === "facebook" && (
+                  <svg class="card-icon card-icon--brand" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M14 8.5h2.2V5h-2.8C10.7 5 9 6.8 9 9.6V12H6.8v3.5H9V22h3.8v-6.5h2.8l.6-3.5h-3.4V9.9c0-.9.4-1.4 1.2-1.4Z"></path>
+                  </svg>
+                )}
+                {card.icon === "spotify" && (
+                  <svg class="card-icon card-icon--brand" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <circle cx="12" cy="12" r="9.5"></circle>
+                    <path d="M7.5 9.2c3.2-.9 6.6-.6 9.1 1"></path>
+                    <path d="M8.2 12.1c2.5-.7 5.1-.5 7.1.8"></path>
+                    <path d="M8.7 14.8c1.8-.5 3.7-.2 5.3.7"></path>
+                  </svg>
+                )}
+                {card.icon === "youtube" && (
+                  <svg class="card-icon card-icon--brand" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M21 7.6a3.1 3.1 0 0 0-2.2-2.2C16.9 5 12 5 12 5s-4.9 0-6.8.4A3.1 3.1 0 0 0 3 7.6 32.4 32.4 0 0 0 2.6 12c0 1.5.1 3 .4 4.4a3.1 3.1 0 0 0 2.2 2.2c1.9.4 6.8.4 6.8.4s4.9 0 6.8-.4a3.1 3.1 0 0 0 2.2-2.2c.3-1.4.4-2.9.4-4.4 0-1.5-.1-3-.4-4.4Z"></path>
+                    <path class="card-icon-cutout" d="m10 15.1 5.1-3.1L10 8.9v6.2Z"></path>
+                  </svg>
+                )}
+                {card.icon === "tiktok" && (
+                  <svg class="card-icon card-icon--brand" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M15.2 4c.5 2.4 1.8 3.8 4.1 4.1v3.4a7.2 7.2 0 0 1-4-1.2v5.4c0 3.3-2.3 5.5-5.5 5.5A5.1 5.1 0 0 1 4.7 16c0-3.1 2.5-5.4 5.6-5.2v3.6c-1.1-.2-2 .5-2 1.6 0 1 .7 1.7 1.7 1.7s1.7-.7 1.7-1.8V4h3.5Z"></path>
+                  </svg>
+                )}
+                {card.icon === "location" && (
+                  <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M12 21s7-5.7 7-12a7 7 0 1 0-14 0c0 6.3 7 12 7 12Z"></path>
+                    <circle cx="12" cy="9" r="2.5"></circle>
+                  </svg>
+                )}
+                <span>{card.title}</span>
+              </a>
             </h3>
             <p>{card.text}</p>
           </article>

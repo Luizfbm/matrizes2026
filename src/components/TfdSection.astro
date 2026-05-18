@@ -25,14 +25,20 @@ const { content } = Astro.props;
           }
         </div>
       </div>
-      <figure class="festival-photo festival-photo--dance">
-      <img
-        src={content.images.danceSrc}
-        alt={content.images.danceAlt}
-        loading="lazy"
-        decoding="async"
-      />
-      </figure>
+      <div class="tfd-gallery" aria-label={content.sections.tfdTitle}>
+        {
+          content.images.tfdImages.map((image) => (
+            <figure class="festival-photo festival-photo--dance">
+              <img
+                src={image.src}
+                alt={image.alt}
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+          ))
+        }
+      </div>
     </div>
   </div>
 </section>

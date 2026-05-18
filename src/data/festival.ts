@@ -100,49 +100,73 @@ export const festivalPages = {
       infoCards: [
         {
           title: "Programação",
-          text: "Veja os artistas confirmados e acompanhe as atualizações oficiais do festival.",
-          icon: "party"
+          text: "Veja os artistas confirmados, datas do festival e atualizações oficiais da programação do Festival Matrizes 2026 em Itaúnas.",
+          icon: "party",
+          href: "#programacao",
+          linkLabel: "Ver programação e artistas do Festival Matrizes 2026"
         },
         {
           title: "Ingressos",
-          text: "Garanta seu ingresso pelos canais oficiais do Festival Matrizes.",
-          icon: "ticket"
+          text: "Garanta seu ingresso para o Festival Matrizes 2026 pelo canal oficial de venda na Sympla.",
+          icon: "ticket",
+          href: shared.links.tickets,
+          linkLabel: "Comprar ingresso oficial do Festival Matrizes 2026 na Sympla"
+        },
+        {
+          title: "Hospedagem em Itaúnas",
+          text: "Reserve hospedagem com antecedência: julho é alta procura para forró, festivais e turismo na vila de Itaúnas.",
+          icon: "location",
+          href: shared.links.linktree,
+          linkLabel: "Ver canais oficiais com informações para planejar hospedagem em Itaúnas"
+        },
+        {
+          title: "Excursões e chegada",
+          text: "Acompanhe os canais oficiais para informações sobre excursões, deslocamento e chegada a Itaúnas durante o festival.",
+          icon: "location",
+          href: shared.links.instagram,
+          linkLabel: "Acompanhar informações oficiais sobre excursões e chegada a Itaúnas"
         },
         {
           title: "@buracodotatuitaunas",
           text: "Acompanhe novidades, chamadas e conteúdos oficiais do Buraco do Tatu.",
           icon: "instagram",
-          href: shared.links.instagram
+          href: shared.links.instagram,
+          linkLabel: "Instagram oficial do Buraco do Tatu"
         },
         {
           title: "Facebook",
           text: "Acompanhe eventos e novidades oficiais no Facebook.",
           icon: "facebook",
-          href: shared.links.facebook
+          href: shared.links.facebook,
+          linkLabel: "Facebook oficial do Buraco do Tatu"
         },
         {
           title: "Spotify",
           text: "Ouça seleções e conteúdos musicais ligados ao Buraco do Tatu.",
           icon: "spotify",
-          href: shared.links.spotify
+          href: shared.links.spotify,
+          linkLabel: "Spotify oficial do Buraco do Tatu"
         },
         {
           title: "YouTube",
           text: "Veja vídeos e registros oficiais do Buraco do Tatu.",
           icon: "youtube",
-          href: shared.links.youtube
+          href: shared.links.youtube,
+          linkLabel: "YouTube oficial do Buraco do Tatu"
         },
         {
           title: "TikTok",
           text: "Acompanhe cortes, chamadas e bastidores em vídeo curto.",
           icon: "tiktok",
-          href: shared.links.tiktok
+          href: shared.links.tiktok,
+          linkLabel: "TikTok oficial do Buraco do Tatu"
         },
         {
-          title: "Local",
-          text: "Buraco do Tatu, Itaúnas, Conceição da Barra - ES.",
+          title: "Como chegar",
+          text: "O Festival Matrizes acontece no Buraco do Tatu, em Itaúnas, Conceição da Barra, Espírito Santo.",
           icon: "location",
-          href: shared.links.maps
+          href: shared.links.maps,
+          linkLabel: "Abrir localização do Buraco do Tatu em Itaúnas no Google Maps"
         }
       ],
       venueEyebrow: "A casa",
@@ -162,13 +186,23 @@ export const festivalPages = {
     images: {
       heroSrc: "/images/matrizes-drive/festival-matrizes-2026-buraco-do-tatu-itaunas-casa-cheia.jpg",
       lineupSrc: "/images/matrizes-drive/programacao-festival-matrizes-2026-palco-forro-itaunas.jpg",
-      danceSrc: "/images/matrizes-drive/festival-matrizes-2026-buraco-do-tatu-itaunas-casa-cheia.jpg",
+      danceSrc: "/images/matrizes-drive/danca-forro-festival-matrizes-2026-itaunas.jpg",
       venueSrc: "/images/matrizes-drive/forro-em-itaunas-festival-matrizes-2026-sanfona.jpg",
       detailSrc: "/images/matrizes-drive/detalhe-copo-festival-matrizes-2026-buraco-do-tatu.jpg",
       heroAlt: "Casa cheia no Festival Matrizes 2026 no Buraco do Tatu em Itaúnas",
       lineupAlt: "Palco do Festival Matrizes 2026 com show de forró em Itaúnas",
-      danceAlt: "Casa cheia durante o Festival Matrizes 2026 no Buraco do Tatu em Itaúnas",
-      venueAlt: "Sanfoneiro se apresentando no Festival Matrizes no Buraco do Tatu"
+      danceAlt: "Casal dançando forró no Festival Matrizes 2026 em Itaúnas",
+      venueAlt: "Show de forró no palco do Festival Matrizes no Buraco do Tatu em Itaúnas",
+      tfdImages: [
+        {
+          src: "/images/matrizes-drive/danca-forro-festival-matrizes-2026-itaunas.jpg",
+          alt: "Casal dançando forró durante o Festival Matrizes 2026 em Itaúnas"
+        },
+        {
+          src: "/images/matrizes-drive/torneio-forro-danca-festival-matrizes-2026-itaunas.jpg",
+          alt: "Casal competindo no Torneio de Forró Dança do Festival Matrizes em Itaúnas"
+        }
+      ]
     },
     faq: [
       {
@@ -187,6 +221,26 @@ export const festivalPages = {
       {
         question: "Onde garantir ingresso para o Matrizes 2026?",
         answer: "Os ingressos devem ser garantidos pelos canais oficiais do Festival Matrizes, incluindo a Sympla."
+      },
+      {
+        question: "O que é o Buraco do Tatu em Itaúnas?",
+        answer:
+          "O Buraco do Tatu é uma casa tradicional de forró em Itaúnas, no Espírito Santo, e é a sede oficial do Festival Matrizes 2026."
+      },
+      {
+        question: "Como chegar ao Festival Matrizes 2026 em Itaúnas?",
+        answer:
+          "O Festival Matrizes 2026 acontece no Buraco do Tatu, na vila de Itaúnas, em Conceição da Barra, Espírito Santo. A localização oficial pode ser consultada no Google Maps."
+      },
+      {
+        question: "Tem hospedagem ou excursão para o Festival Matrizes?",
+        answer:
+          "Itaúnas costuma ter alta procura em julho. Para hospedagem, excursões e deslocamento, acompanhe os canais oficiais do Buraco do Tatu e do Festival Matrizes."
+      },
+      {
+        question: "O que é o TFD no Festival Matrizes?",
+        answer:
+          "TFD é o Torneio de Forró Dança, uma programação do Festival Matrizes dedicada à valorização da dança, dos grupos e da cultura forrozeira em Itaúnas."
       }
     ]
   },
@@ -249,49 +303,73 @@ export const festivalPages = {
       infoCards: [
         {
           title: "Lineup",
-          text: "See confirmed artists and follow official festival updates.",
-          icon: "party"
+          text: "See confirmed artists, festival dates and official program updates for Festival Matrizes 2026 in Itaúnas.",
+          icon: "party",
+          href: "#programacao",
+          linkLabel: "See Festival Matrizes 2026 lineup and program"
         },
         {
           title: "Tickets",
-          text: "Get your ticket through the official Festival Matrizes channels.",
-          icon: "ticket"
+          text: "Get your Festival Matrizes 2026 ticket through the official Sympla sales channel.",
+          icon: "ticket",
+          href: shared.links.tickets,
+          linkLabel: "Buy official Festival Matrizes 2026 tickets on Sympla"
+        },
+        {
+          title: "Where to stay",
+          text: "Book lodging early: July is a high-demand period for forró, festivals and travel in the village of Itaúnas.",
+          icon: "location",
+          href: shared.links.linktree,
+          linkLabel: "Open official channels for planning lodging in Itaúnas"
+        },
+        {
+          title: "Trips and arrival",
+          text: "Follow the official channels for updates about group trips, transportation and arrival in Itaúnas during the festival.",
+          icon: "location",
+          href: shared.links.instagram,
+          linkLabel: "Follow official updates about trips and arrival in Itaúnas"
         },
         {
           title: "@buracodotatuitaunas",
           text: "Follow news, announcements and official Buraco do Tatu content.",
           icon: "instagram",
-          href: shared.links.instagram
+          href: shared.links.instagram,
+          linkLabel: "Official Buraco do Tatu Instagram"
         },
         {
           title: "Facebook",
           text: "Follow official events and updates on Facebook.",
           icon: "facebook",
-          href: shared.links.facebook
+          href: shared.links.facebook,
+          linkLabel: "Official Buraco do Tatu Facebook"
         },
         {
           title: "Spotify",
           text: "Listen to music selections connected to Buraco do Tatu.",
           icon: "spotify",
-          href: shared.links.spotify
+          href: shared.links.spotify,
+          linkLabel: "Official Buraco do Tatu Spotify"
         },
         {
           title: "YouTube",
           text: "Watch official videos and festival moments from Buraco do Tatu.",
           icon: "youtube",
-          href: shared.links.youtube
+          href: shared.links.youtube,
+          linkLabel: "Official Buraco do Tatu YouTube"
         },
         {
           title: "TikTok",
           text: "Follow short videos, announcements and backstage moments.",
           icon: "tiktok",
-          href: shared.links.tiktok
+          href: shared.links.tiktok,
+          linkLabel: "Official Buraco do Tatu TikTok"
         },
         {
-          title: "Location",
-          text: "Buraco do Tatu, Itaúnas, Conceição da Barra - Espírito Santo, Brazil.",
+          title: "How to get there",
+          text: "Festival Matrizes takes place at Buraco do Tatu in Itaúnas, Conceição da Barra, Espírito Santo, Brazil.",
           icon: "location",
-          href: shared.links.maps
+          href: shared.links.maps,
+          linkLabel: "Open Buraco do Tatu location in Itaúnas on Google Maps"
         }
       ],
       venueEyebrow: "The venue",
@@ -311,13 +389,23 @@ export const festivalPages = {
     images: {
       heroSrc: "/images/matrizes-drive/festival-matrizes-2026-buraco-do-tatu-itaunas-casa-cheia.jpg",
       lineupSrc: "/images/matrizes-drive/programacao-festival-matrizes-2026-palco-forro-itaunas.jpg",
-      danceSrc: "/images/matrizes-drive/festival-matrizes-2026-buraco-do-tatu-itaunas-casa-cheia.jpg",
+      danceSrc: "/images/matrizes-drive/danca-forro-festival-matrizes-2026-itaunas.jpg",
       venueSrc: "/images/matrizes-drive/forro-em-itaunas-festival-matrizes-2026-sanfona.jpg",
       detailSrc: "/images/matrizes-drive/detalhe-copo-festival-matrizes-2026-buraco-do-tatu.jpg",
       heroAlt: "Full house at Festival Matrizes 2026 at Buraco do Tatu in Itaúnas",
       lineupAlt: "Festival Matrizes 2026 stage with a forró concert in Itaúnas",
-      danceAlt: "Full house during Festival Matrizes 2026 at Buraco do Tatu in Itaúnas",
-      venueAlt: "Accordion player performing at Festival Matrizes at Buraco do Tatu"
+      danceAlt: "Couple dancing forró at Festival Matrizes 2026 in Itaúnas",
+      venueAlt: "Forró concert on the Festival Matrizes stage at Buraco do Tatu in Itaúnas",
+      tfdImages: [
+        {
+          src: "/images/matrizes-drive/danca-forro-festival-matrizes-2026-itaunas.jpg",
+          alt: "Couple dancing forró during Festival Matrizes 2026 in Itaúnas"
+        },
+        {
+          src: "/images/matrizes-drive/torneio-forro-danca-festival-matrizes-2026-itaunas.jpg",
+          alt: "Couple competing in the Forró Dance Tournament at Festival Matrizes in Itaúnas"
+        }
+      ]
     },
     faq: [
       {
@@ -336,6 +424,26 @@ export const festivalPages = {
       {
         question: "Where can I get tickets for Matrizes 2026?",
         answer: "Tickets are available through the official Festival Matrizes channels, including Sympla."
+      },
+      {
+        question: "What is Buraco do Tatu in Itaúnas?",
+        answer:
+          "Buraco do Tatu is a traditional forró venue in Itaúnas, Espírito Santo, Brazil, and the official home of Festival Matrizes 2026."
+      },
+      {
+        question: "How do I get to Festival Matrizes 2026 in Itaúnas?",
+        answer:
+          "Festival Matrizes 2026 takes place at Buraco do Tatu in the village of Itaúnas, Conceição da Barra, Espírito Santo, Brazil. The official location is available on Google Maps."
+      },
+      {
+        question: "Is there lodging or group travel for Festival Matrizes?",
+        answer:
+          "Itaúnas is in high demand in July. For lodging, group trips and transportation updates, follow the official Buraco do Tatu and Festival Matrizes channels."
+      },
+      {
+        question: "What is TFD at Festival Matrizes?",
+        answer:
+          "TFD is the Forró Dance Tournament, a Festival Matrizes program dedicated to celebrating dance, groups and forró culture in Itaúnas."
       }
     ]
   }

@@ -262,7 +262,7 @@ a {
 }
 
 .festival-photo--lineup img {
-  object-position: 82% 16%;
+  object-position: 50% 58%;
 }
 
 .festival-photo--dance {
@@ -274,10 +274,11 @@ a {
 }
 
 .festival-photo--venue {
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 3 / 2;
 }
 
 .festival-photo--venue img {
+  object-fit: contain;
   object-position: 18% 83%;
 }
 
@@ -344,6 +345,24 @@ a {
   gap: 24px;
 }
 
+.tfd-gallery {
+  display: grid;
+  grid-auto-columns: minmax(82%, 1fr);
+  grid-auto-flow: column;
+  gap: 16px;
+  margin-inline: -20px;
+  overflow-x: auto;
+  padding: 0 20px 12px;
+  scroll-padding-inline: 20px;
+  scroll-snap-type: x mandatory;
+  scrollbar-color: var(--color-yellow) transparent;
+}
+
+.tfd-gallery .festival-photo {
+  margin: 0;
+  scroll-snap-align: center;
+}
+
 .tfd-actions {
   display: flex;
   flex-direction: column;
@@ -397,6 +416,25 @@ a {
   .tfd-layout {
     grid-template-columns: minmax(0, 0.9fr) minmax(420px, 1.1fr);
     align-items: center;
+  }
+
+  .tfd-gallery {
+    grid-auto-columns: initial;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
+    margin-inline: 0;
+    overflow: visible;
+    padding: 0;
+    scroll-snap-type: none;
+  }
+
+  .tfd-gallery .festival-photo--dance {
+    aspect-ratio: 2 / 3;
+  }
+
+  .tfd-gallery .festival-photo {
+    scroll-snap-align: none;
   }
 
   .tfd-actions {
