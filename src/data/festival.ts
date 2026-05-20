@@ -9,7 +9,7 @@ const shared = {
     "Trio Sabiá",
     "Os 3 do Nordeste",
     "Diana do Sertão",
-    "Forró Caçana",
+    "Forroçacana",
     "D2 in Trio",
     "Alvorada",
     "Nicolas Krassik",
@@ -23,8 +23,16 @@ const shared = {
     "Coisa de Zé",
     "Potiguá",
     "Barbara Greco",
-    "Isamara",
-    "Forrofia"
+    "ISA PEGADO",
+    "Forrofiá"
+  ],
+  vinylLineup: [
+    "DJ PC",
+    "Coletivo Carcará",
+    "DJ Ivan",
+    "No Balanço do Vinil",
+    "DJ Lara Areias",
+    "Coletivo Candango"
   ],
   links: {
     tickets: "https://www.sympla.com.br/evento/festival-matrizes-2026/3174950",
@@ -86,6 +94,7 @@ export const festivalPages = {
       quickTitle: "O que é o Matrizes 2026?",
       lineupEyebrow: "Line-up e programação",
       lineupTitle: "Forró de 11 a 18 de julho",
+      vinylLineupTitle: "Discotecagem em vinil",
       programNote:
         "A programação completa por dia pode ser atualizada conforme novas confirmações oficiais do festival.",
       ticketCta: "Garantir ingresso",
@@ -289,6 +298,7 @@ export const festivalPages = {
       quickTitle: "What is Festival Matrizes?",
       lineupEyebrow: "Lineup and program",
       lineupTitle: "Forró from July 11 to 18",
+      vinylLineupTitle: "Vinyl DJ sets",
       programNote:
         "The day-by-day program may be updated as new official confirmations are announced.",
       ticketCta: "Get tickets",

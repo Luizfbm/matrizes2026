@@ -24,6 +24,12 @@ const { content } = Astro.props;
     <ul class="lineup-grid">
       {content.lineup.map((artist) => <li>{artist}</li>)}
     </ul>
+    <div class="lineup-subsection">
+      <h3>{content.sections.vinylLineupTitle}</h3>
+      <ul class="lineup-grid lineup-grid--secondary">
+        {content.vinylLineup.map((artist) => <li>{artist}</li>)}
+      </ul>
+    </div>
     <a class="button" href={content.links.tickets}>{content.sections.ticketCta}</a>
   </div>
 </section>
